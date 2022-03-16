@@ -15,16 +15,16 @@ Have multiple methods and have less variable to be cpu efficient.
 
 
             // Introduction
-            Console.WriteLine("========================================================|");
-            Console.WriteLine("Hello and welcome to my Te Reo Maori Quiz.              |");
-            Console.WriteLine("                                                        |");
-            Console.WriteLine("There will be 20 questions that you will be answering.  |");
-            Console.WriteLine("Question 1-5 Basic level.                               |");
-            Console.WriteLine("Quetions 6-12 Medium level.                             |");
-            Console.WriteLine("Question 15-20 Extreme level.                           |");
-            Console.WriteLine("                                                        |");
-            Console.WriteLine("Good Luck                       Press Enter To Continue |");
-            Console.WriteLine("========================================================|");
+            Console.WriteLine("|| ======================================================== || ");
+            Console.WriteLine("|| Hello and welcome to my Te Reo Maori Quiz.               || ");
+            Console.WriteLine("||                                                          || ");
+            Console.WriteLine("|| There will be 20 questions that you will be answering.   || ");
+            Console.WriteLine("|| Question 1-5 Basic level.                                || ");
+            Console.WriteLine("|| Quetions 6-12 Medium level.                              || ");
+            Console.WriteLine("|| Question 15-20 Extreme level.                            || ");
+            Console.WriteLine("||                                                          || ");
+            Console.WriteLine("|| Good Luck                       Press Enter To Continue  || ");
+            Console.WriteLine("|| ======================================================== || ");
             Console.ReadLine();
             //if or switch statements.
             //loops and arrays.
@@ -237,6 +237,7 @@ Have multiple methods and have less variable to be cpu efficient.
 
             // Final Tally Of Score
             Console.WriteLine("Your Total Amount of Score earned was: ");
+            Console.ReadLine();
 
             // Finished Quiz
             Console.WriteLine("Congratulations you have completed my Te Reo Maori Quiz I hope you have learnt something about Te Re Maori. ");
