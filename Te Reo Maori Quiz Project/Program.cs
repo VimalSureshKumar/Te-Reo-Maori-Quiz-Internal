@@ -1,29 +1,34 @@
 ﻿/* This progame is going to be a Te Reo Maori Quiz.
 This programe adds up correct scores and displays final score.
 Have 20 question in relation to Te Reo Maori with multiple options in a question.
-Question 1-5 is basic level. Questions 6-12 is medium level. Questions 13-20 insane level.
+Question 1-5 is basic level. Questions 6-12 is medium level. Questions 13-20 Extreme level.
 Will full/fool proof code as much as possiable.
 Push codes to Github.
 Have multiple methods and have less variable to be cpu efficient. 
 */
 
-//declare variables
-string a, b, c, d;
+
 {
     {
+        static void Main(string[] args)
         {
+            // declare variable
+
+
             // Introduction
+            Console.WriteLine("=========================================================");
             Console.WriteLine("Hello and welcome to my Te Reo Maori Quiz. ");
             Console.ReadLine();
             Console.WriteLine("There will be 20 questions that you will be answering. ");
             Console.ReadLine();
-            Console.WriteLine("Question 1-5 basic level. ");
+            Console.WriteLine("Question 1-5 Basic level. ");
             Console.ReadLine();
-            Console.WriteLine("Quetions 6-12 medium level. ");
+            Console.WriteLine("Quetions 6-12 Medium level. ");
             Console.ReadLine();
-            Console.WriteLine("Question 15-20 insane level. ");
+            Console.WriteLine("Question 15-20 Extreme level. ");
             Console.ReadLine();
-
+            Console.WriteLine("=========================================================");
+            
             //if or switch statements.
             //loops and arrays.
             //methods for adding up correct scores.
@@ -137,7 +142,7 @@ string a, b, c, d;
             Console.WriteLine("Type either A, B, C, D in keybord, Press Enter To Continue: ");
             Console.ReadLine();
 
-            // Insane Level Questions
+            // Extreme Level Questions
             Console.WriteLine("You now are answering Insane Level Questions, Good Luck. ");
             Console.ReadLine();
             Console.WriteLine("Question 13. ");
