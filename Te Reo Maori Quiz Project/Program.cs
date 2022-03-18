@@ -4,7 +4,8 @@
 
         {
             // declare variable
-
+            string a, b, c, d;
+            int num1, num2, num3, num4, num5;
 
             // Introduction
             Console.WriteLine("||========================================================|| ");
@@ -29,26 +30,30 @@
             Console.ReadLine();
             Console.WriteLine("Question 1: ");
             Console.WriteLine("What is ocean in Te Reo Maori: ");
-            Console.WriteLine("a) Ocean");
-            Console.WriteLine("b) Moana");
-            Console.WriteLine("c) Awa");
-            Console.WriteLine("d) River");
+            Console.WriteLine("a) Ocean" );
+            Console.WriteLine("b) Moana" );
+            Console.WriteLine("c) Awa" );
+            Console.WriteLine("d) River" );
+            while (!int.TryParse(Console.ReadLine(), out num1)) // convert to string
+            {
+                Console.Write("\nPlease enter a valid letter only: ");
+            }
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 2: ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)     ");
-            Console.WriteLine("b)     ");
-            Console.WriteLine("c)     ");
-            Console.WriteLine("d)     ");
+            Console.WriteLine("What is Mother in Te Reo Maori: ");
+            Console.WriteLine("a) Father" );
+            Console.WriteLine("b) Whanau" );
+            Console.WriteLine("c) Tamaraki" );
+            Console.WriteLine("d) Mama" );
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 3. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)     ");
-            Console.WriteLine("b)     ");
+            Console.WriteLine("What is Children in Te Reo Maori: ");
+            Console.WriteLine("a) Tamaraki ");
+            Console.WriteLine("b) Children ");
             Console.WriteLine("c)     ");
             Console.WriteLine("d)     ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
@@ -152,74 +157,74 @@
             Console.WriteLine("PRESS ENTER TO CONTINUE: ");
             Console.ReadLine();
             Console.WriteLine("Question 13. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)");
-            Console.WriteLine("b)");
-            Console.WriteLine("c)");
-            Console.WriteLine("d)");
+            Console.WriteLine("What is Circle in Te Reo Maori: ");
+            Console.WriteLine("a) Pahu ");
+            Console.WriteLine("b) Ata toro "); 
+            Console.WriteLine("c) Porohita "); // correct answer
+            Console.WriteLine("d) Meke ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 14. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)");
-            Console.WriteLine("b)");
-            Console.WriteLine("c)");
-            Console.WriteLine("d)");
+            Console.WriteLine("What is Shiver in Te Reo Maori: ");
+            Console.WriteLine("a) Tungawiri "); // correct answer
+            Console.WriteLine("b) Whakaoreone");
+            Console.WriteLine("c) Totohu ");
+            Console.WriteLine("d) Kauhuri");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 15. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)");
-            Console.WriteLine("b)");
-            Console.WriteLine("c)");
-            Console.WriteLine("d)");
+            Console.WriteLine("What is Slide in Te Reo Maori: ");
+            Console.WriteLine("a) Hinga ");
+            Console.WriteLine("b) Ngoki ");
+            Console.WriteLine("c) Ruru ");
+            Console.WriteLine("d) Koneke "); // correct answer
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 16. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)");
-            Console.WriteLine("b)");
-            Console.WriteLine("c)");
-            Console.WriteLine("d)");
+            Console.WriteLine("What is Thrust in Te Reo Maori: ");
+            Console.WriteLine("a) Hinga ");
+            Console.WriteLine("b) Takahi ");
+            Console.WriteLine("c) Kokiri "); // correct answer
+            Console.WriteLine("d) Matike ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 17. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)");
-            Console.WriteLine("b)");
-            Console.WriteLine("c)");
-            Console.WriteLine("d)");
+            Console.WriteLine("What is Bounce in Te Reo Maori: ");
+            Console.WriteLine("a) Matike");
+            Console.WriteLine("b) Tupana"); // correct answer
+            Console.WriteLine("c) Mawewe");
+            Console.WriteLine("d) Takapori");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 18. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)");
-            Console.WriteLine("b)");
-            Console.WriteLine("c)");
-            Console.WriteLine("d)");
+            Console.WriteLine("What is Freeze in Te Reo Maori: ");
+            Console.WriteLine("a) Wheta");
+            Console.WriteLine("b) Iriri");
+            Console.WriteLine("c) E Peke");
+            Console.WriteLine("d) Kia Mau"); // correct answer
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 19. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)");
-            Console.WriteLine("b)");
-            Console.WriteLine("c)");
-            Console.WriteLine("d)");
+            Console.WriteLine("What is Melt in Te Reo Maori: ");
+            Console.WriteLine("a) Whakaoreore"); // correct answer
+            Console.WriteLine("b) Ruru");
+            Console.WriteLine("c) Huri");
+            Console.WriteLine("d) Pehi");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 20. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)");
-            Console.WriteLine("b)");
-            Console.WriteLine("c)");
-            Console.WriteLine("d)");
+            Console.WriteLine("What is Shimmy in Te Reo Maori: ");
+            Console.WriteLine("a) Hurokurku");
+            Console.WriteLine("b) E Heke Ki Raro");
+            Console.WriteLine("c) Titakataka"); // correct answer
+            Console.WriteLine("d) Whakarewa");
             Console.WriteLine("Type either A, B, C, D in keybord, PPRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -232,6 +237,7 @@
 
             // Finished Quiz
             Console.WriteLine("Congratulations you have completed my Te Reo Maori Quiz I hope you have learnt something about Te Re Maori. ");
+            Console.WriteLine("GOODBYE. ");
         }
     }
 }
