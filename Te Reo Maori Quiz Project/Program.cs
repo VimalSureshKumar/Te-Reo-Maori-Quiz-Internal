@@ -3,9 +3,17 @@
     {
 
         {
+            
             // declare variable
             string a, b, c, d;
+            string A, B, C, D;
+            string option;
             int num1, num2, num3, num4, num5;
+            string condition1, condition2, condition3;
+            bool Ocean = false;
+            bool Moana = true;
+            bool Awa = false;
+            bool River = false;
 
             // Introduction
             Console.WriteLine("||========================================================|| ");
@@ -23,6 +31,7 @@
             //loops and arrays.
             //methods for adding up correct scores.
 
+
             // Basic Level Questions
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("You know are answering Basic Level Questions, Good Luck. ");
@@ -30,14 +39,13 @@
             Console.ReadLine();
             Console.WriteLine("Question 1: ");
             Console.WriteLine("What is ocean in Te Reo Maori: ");
-            Console.WriteLine("a) Ocean" );
-            Console.WriteLine("b) Moana" );
-            Console.WriteLine("c) Awa" );
-            Console.WriteLine("d) River" );
-            while (!int.TryParse(Console.ReadLine(), out num1)) // convert to string
-            {
-                Console.Write("\nPlease enter a valid letter only: ");
-            }
+            Console.WriteLine("a) Ocean" + a );
+            Console.WriteLine("b) Moana" + b);
+            Console.WriteLine("c) Awa" + c );
+            Console.WriteLine("d) River" + d );
+            Console.WriteLine("Please Type A, B, C, D on your Keyboard: ");
+            static void YourMethodName(int a = 0, int b = 1, int c = 0, int d = 0;
+
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
             Console.ReadLine();
             Console.WriteLine("=========================================================");
@@ -48,6 +56,8 @@
             Console.WriteLine("c) Tamaraki" );
             Console.WriteLine("d) Mama" );
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 3. ");
@@ -57,6 +67,8 @@
             Console.WriteLine("c)     ");
             Console.WriteLine("d)     ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 4. ");
@@ -66,6 +78,8 @@
             Console.WriteLine("c)      ");
             Console.WriteLine("d)      ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 5. ");
@@ -75,6 +89,8 @@
             Console.WriteLine("c)       ");
             Console.WriteLine("d)       ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("PRESS ENTER FOR NEXT LEVEL: ");
@@ -92,6 +108,8 @@
             Console.WriteLine("c)       ");
             Console.WriteLine("d)       ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 7. ");
@@ -101,6 +119,8 @@
             Console.WriteLine("c)        ");
             Console.WriteLine("d)        ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 8. ");
@@ -111,6 +131,8 @@
             Console.WriteLine("c)        ");
             Console.WriteLine("d)        ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 9. ");
@@ -120,6 +142,8 @@
             Console.WriteLine("c)         ");
             Console.WriteLine("d");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 10. ");
@@ -128,6 +152,9 @@
             Console.WriteLine("b)");
             Console.WriteLine("c)");
             Console.WriteLine("d)");
+            Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 11. ");
@@ -137,6 +164,8 @@
             Console.WriteLine("c)");
             Console.WriteLine("d)");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 12. ");
@@ -146,6 +175,8 @@
             Console.WriteLine("c)");
             Console.WriteLine("d)");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("PRESS ENTER FOR NEXT LEVEL: ");
@@ -163,6 +194,8 @@
             Console.WriteLine("c) Porohita "); // correct answer
             Console.WriteLine("d) Meke ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 14. ");
@@ -172,6 +205,8 @@
             Console.WriteLine("c) Totohu ");
             Console.WriteLine("d) Kauhuri");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 15. ");
@@ -181,6 +216,8 @@
             Console.WriteLine("c) Ruru ");
             Console.WriteLine("d) Koneke "); // correct answer
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 16. ");
@@ -190,6 +227,8 @@
             Console.WriteLine("c) Kokiri "); // correct answer
             Console.WriteLine("d) Matike ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 17. ");
@@ -199,6 +238,8 @@
             Console.WriteLine("c) Mawewe");
             Console.WriteLine("d) Takapori");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 18. ");
@@ -208,6 +249,8 @@
             Console.WriteLine("c) E Peke");
             Console.WriteLine("d) Kia Mau"); // correct answer
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 19. ");
@@ -217,6 +260,8 @@
             Console.WriteLine("c) Huri");
             Console.WriteLine("d) Pehi");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 20. ");
@@ -226,14 +271,19 @@
             Console.WriteLine("c) Titakataka"); // correct answer
             Console.WriteLine("d) Whakarewa");
             Console.WriteLine("Type either A, B, C, D in keybord, PPRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("PRESS ENTER TO SEE RESULTS: ");
             Console.ReadLine();
 
+
             // Final Tally Of Score 
             Console.WriteLine("Your Total Amount of Points earned: ");
             Console.WriteLine("Your Total Amount of Score earned was: ");
+
+
 
             // Finished Quiz
             Console.WriteLine("Congratulations you have completed my Te Reo Maori Quiz I hope you have learnt something about Te Re Maori. ");
