@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+using System.Linq;
+
 {
     {
 
@@ -38,23 +40,22 @@
             Console.WriteLine("PRESS ENTER TO CONTINUE: ");
             Console.ReadLine();
             Console.WriteLine("Question 1: ");
-            Console.WriteLine("What is ocean in Te Reo Maori: ");
-            Console.WriteLine("a) Ocean" + a );
-            Console.WriteLine("b) Moana" + b);
-            Console.WriteLine("c) Awa" + c );
-            Console.WriteLine("d) River" + d );
-            Console.WriteLine("Please Type A, B, C, D on your Keyboard: ");
-            static void YourMethodName(int a = 0, int b = 1, int c = 0, int d = 0;
-
+            Console.WriteLine("What is Ocean in Te Reo Maori: ");
+            Console.WriteLine("a) Ocean");
+            Console.WriteLine("b) Moana"); // correct answer
+            Console.WriteLine("c) Awa");
+            Console.WriteLine("d) River");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+
+
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 2: ");
             Console.WriteLine("What is Mother in Te Reo Maori: ");
-            Console.WriteLine("a) Father" );
+            Console.WriteLine("a) Whaea"); // correct answer
             Console.WriteLine("b) Whanau" );
             Console.WriteLine("c) Tamaraki" );
-            Console.WriteLine("d) Mama" );
+            Console.WriteLine("d) Mama" ); // correct answer
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
 
 
@@ -62,32 +63,33 @@
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 3. ");
             Console.WriteLine("What is Children in Te Reo Maori: ");
-            Console.WriteLine("a) Tamaraki ");
-            Console.WriteLine("b) Children ");
-            Console.WriteLine("c)     ");
-            Console.WriteLine("d)     ");
+            Console.WriteLine("a) Tamaraki"); // correct answer
+            Console.WriteLine("b) Children");
+            Console.WriteLine("c) Tena Koe");
+            Console.WriteLine("d) Ka Kite ");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
 
 
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 4. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)      ");
-            Console.WriteLine("b)      ");
-            Console.WriteLine("c)      ");
-            Console.WriteLine("d)      ");
+            Console.WriteLine("What is Good Morning in Te Reo Maori: ");
+            Console.WriteLine("a) Ahiahi Pai");
+            Console.WriteLine("b) Kia Ora");
+            Console.WriteLine("c) Morena"); // correct answer
+            Console.WriteLine("d) Ra Pai");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
 
 
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 5. ");
-            Console.WriteLine("What is --- in Te Reo Maori: ");
-            Console.WriteLine("a)       ");
-            Console.WriteLine("b)       ");
-            Console.WriteLine("c)       ");
-            Console.WriteLine("d)       ");
+            Console.WriteLine("What is School in Te Reo Maori: ");
+            Console.WriteLine("a) Whare");
+            Console.WriteLine("b) Hapu ");
+            Console.WriteLine("c) Kura"); // correct answer
+            Console.WriteLine("d) Tane" +
+                "");
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
 
 
