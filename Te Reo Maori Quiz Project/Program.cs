@@ -5,8 +5,8 @@
         {
             
             // declare variable
-            string a, b, c, d;
-            string A, B, C, D;
+            string aA, bB, cC, dD;
+;
             string option;
             int num1, num2, num3, num4, num5;
             string condition1, condition2, condition3;
@@ -27,8 +27,9 @@
             Console.WriteLine("||Good Luck                       PRESS ENTER TO CONTINUE || ");
             Console.WriteLine("||========================================================|| ");
             Console.ReadLine();
+            //menu options need to be added
             //if or switch statements.
-            //loops and arrays.
+            //loops and arrays for menu and maybe repeat code again.
             //methods for adding up correct scores.
 
 
@@ -40,11 +41,28 @@
             Console.ReadLine();
             Console.WriteLine("Question 1: ");
             Console.WriteLine("What is Ocean in Te Reo Maori: ");
-            Console.WriteLine("a) Ocean" );
-            Console.WriteLine("b) Moana" ); // correct answer
-            Console.WriteLine("c) Awa" );
-            Console.WriteLine("d) River" );
+            Console.WriteLine("\t a) Ocean" );
+            Console.WriteLine("\t b) Moana" ); // correct answer
+            Console.WriteLine("\t c) Awa" );
+            Console.WriteLine("\t d) River" );
             Console.WriteLine("Type either A, B, C, D in keybord, PRESS ENTER TO CONFIRM: ");
+void DisplayMeasurements(int a, int b)
+{
+    switch ((a, b))
+    {
+        case (> 0, > 0) when a == b:
+            Console.WriteLine($"Both measurements are valid and equal to {a}.");
+            break;
+
+        case (> 0, > 0):
+            Console.WriteLine($"First measurement is {a}, second measurement is {b}.");
+            break;
+
+        default:
+            Console.WriteLine("One or both measurements are not valid.");
+            break;
+    }
+}
 
 
             Console.ReadLine();
@@ -98,8 +116,10 @@
             Console.ReadLine();
 
             // Medium Level Questions
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("You now are answering Medium Level Questions, Good Luck. ");
             Console.WriteLine("PRESS ENTER TO CONTINUE: ");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.ReadLine();
             Console.WriteLine("Question 6. ");
             Console.WriteLine("What is Guardian in Te Reo Maori: ");
@@ -183,8 +203,10 @@
             Console.ReadLine();
 
             // Extreme Level Questions
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("You now are answering Extreme Level Questions, Good Luck. ");
             Console.WriteLine("PRESS ENTER TO CONTINUE: ");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.ReadLine();
             Console.WriteLine("Question 13. ");
             Console.WriteLine("What is Circle in Te Reo Maori: ");
