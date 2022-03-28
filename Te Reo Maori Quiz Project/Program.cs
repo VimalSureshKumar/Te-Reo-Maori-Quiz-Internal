@@ -7,9 +7,8 @@
             int score = 0;
             // Introduction/ Menu
             Console.WriteLine("========================================================");
-            Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\n\nThere Will Be 20 Questions That You Will Be Answering.\nQuestion 1-5 Basic level.\nQuetions 6-12 Medium level.\nQuestion 15-20 Extreme level.\n\nPRESS ENTER TO CONTINUE");
+            Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\n\nThere Will Be 20 Questions That You Will Be Answering.\nQuestion 1-5 Basic level.\nQuetions 6-12 Medium level.\nQuestion 15-20 Extreme level. ");
             Console.WriteLine("========================================================");
-            Console.ReadLine();
             // menu options need to be added
             // if or switch statements.
             // loops and arrays for menu and maybe repeat code again.
@@ -29,14 +28,11 @@
             if (question1 == 2)
             {
                 Console.WriteLine("Correct Answer");
-                score = score++;
+                score = score++; 
             }
+            Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 2:\nWhat is Mother in Te Reo Maori:\n1) Whaea\n2) Whanau\n3) Tamaraki\n4) Mama\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 1) and 4) is correct answer
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
             int question2 = 1 + 4;
             if (question1 >= 1 || question2 == 4)
             {
@@ -45,10 +41,6 @@
             }
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 3:\nWhat is Children in Te Reo Maori:\n1) Tamaraki \n2) Children \n3) Tena Koe \n4) Ka Kite \nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 1) is correct answer
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
             int question3 = 1;
             if (question3 == 1)
             {
@@ -57,10 +49,6 @@
             }
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 4:\nWhat is Good Morning in Te Reo Maori:\n1) Ahiahi Pai \n2) Kia Ora \n3) Morena \n4) Ra Pai \nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 3) is correct answer
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
             int question4 = 3;
             if (question4 == 3)
             {
@@ -69,16 +57,17 @@
             }
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 5:\nWhat is School in Te Reo Maori:\n1) Whare\n2) Kura\n3) Hapu\n4) Tane\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 2) is correct answer  
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
             int question5 = 2;
             if (question5 == 2)
             {
                 Console.WriteLine("Correct Answer");
                 score = score++;
             }
+                        while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5)
+            {
+                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
+            }
+
             // Medium Level Questions
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("You Now Are Answering Medium Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
