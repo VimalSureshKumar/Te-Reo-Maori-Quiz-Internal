@@ -20,24 +20,38 @@
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 1:\nWhat is Ocean in Te Reo Maori:\n1) Ocean\n2) Moana\n3) Awa\n4) River\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 2) Moana is correct answer
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5)
+            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5) // While Loop So The User Is Only Allowed to Enter 1, 2, 3, 4
             {
                 Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
             }
             int question1 = 2;
-            if (question1 == 2)
+            if (question1 != 2)
             {
-                Console.WriteLine("Correct Answer");
-                score = score++; 
+                Console.Write("Incorrect Answer");
+                score = score++;
+            }
+            else if (question1 == 2)
+            {
+                Console.Write("Correct Answer!");
+                score = score--;
             }
             Console.ReadLine();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 2:\nWhat is Mother in Te Reo Maori:\n1) Whaea\n2) Whanau\n3) Tamaraki\n4) Mama\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 1) and 4) is correct answer
+            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5)
+            {
+                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
+            }
             int question2 = 1 + 4;
-            if (question1 >= 1 || question2 == 4)
+            if (question2 == 1 || question2 == 4)
             {
                 Console.WriteLine("Correct Answer");
                 score = score++;
+            }
+            else if (question2 != 2 || question2 !=3)
+            {
+                Console.WriteLine("Incorrect Answer! ");
+
             }
             Console.WriteLine("=========================================================");
             Console.WriteLine("Question 3:\nWhat is Children in Te Reo Maori:\n1) Tamaraki \n2) Children \n3) Tena Koe \n4) Ka Kite \nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 1) is correct answer
