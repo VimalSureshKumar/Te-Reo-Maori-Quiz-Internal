@@ -29,7 +29,7 @@
 
             // Introduction/ Menu
             Console.WriteLine("========================================================");
-            Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\n\nThere Will Be 20 Questions That You Will Be Answering.\nQuestion 1-5 Basic level.\nQuetions 6-12 Medium level.\nQuestion 15-20 Extreme level. ");
+            Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\nThere Will Be 20 Questions That You Will Be Answering.\nQuestion 1-5 Basic level.\nQuetions 6-12 Medium level.\nQuestion 15-20 Extreme level. ");
             Console.WriteLine("========================================================");
             // menu options need to be added
             // if or switch statements.
@@ -352,8 +352,12 @@
                 Console.WriteLine("Incorrect Answer!");
             }
             // Final Tally Of Score 
+            int scoreTotal = score++;
             Console.WriteLine("=================================================");
-            Console.WriteLine("Your Total Amount of Correct Questions Answered: ");
+            for (scoreTotal += score[i]) 
+            {
+                Console.Write("Your Total Amount of Correct Questions Answered:");
+            }
             Console.WriteLine("=================================================");
             // Finished Quiz Message
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
