@@ -8,22 +8,23 @@ namespace TeReoMaoriQuizProject
         {
             // Psudo Code
             /* This program is a 20 Question Quiz On Te Reo Maori. 
-             Add And Declare Int Variables For Option, Score And Question = Answer.
+             Use System, Class = MainClass, Public static void Main() = Can Be Called Without Object. 
+             Add And Declare Int Variables For Option, Score And (Question = Answer).
              Add An Introduction Message. 
              5 Questions On Basic Level And Add Basic Level Message. 
              Add A While Loop To Each Question So The User Is Only Allowed To Type (1, 2, 3, 4). 
-             Have If Statement For Correct Answer And Add 1 To The Score And Else Statement Stating Incorrect Answer If The User Dosen't Input The Right Answer To The Question. 
+             Have If Statement For Correct Answer And Add 1 To The Score, Else Display Incorrect Answer If The User Dosen't Input The Right Answer To The Question. 
              7 Questions On Medium Level And Add Medium Level Message.
              Add A While Loop To Each Question So The User Is Only Allowed To Type (1, 2, 3, 4). 
-             Have If Statement For Correct Answer And Add 1 To The Score And Else Statement Stating Incorrect Answer If The User Dosen't Input The Right Answer To The Question.
+             Have If Statement For Correct Answer And Add 1 To The Score, Else Display Incorrect Answer If The User Dosen't Input The Right Answer To The Question.
              8 Questions On Extreme Level And Add Extreme Level Message.
              Add A While Loop To Each Question So The User Is Only Allowed To Type (1, 2, 3, 4). 
-             Have If Statement For Correct Answer And Add 1 To The Score And Else Statement Stating Incorrect Answer If The User Dosen't Input The Right Answer To The Question.
+             Have If Statement For Correct Answer And Add 1 To The Score, Else Display Incorrect Answer If The User Dosen't Input The Right Answer To The Question.
              Tally Up All The Correct Answers Out Of 20.
              Display End Message
             */
 
-            // declare variable
+            // Declare Variables
             int option;
             int score = 0;
             int question1 = 2;
@@ -51,7 +52,7 @@ namespace TeReoMaoriQuizProject
             // Introduction
             Console.WriteLine("========================================================");
             Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\nThere Will Be 20 Questions That You Will Be Answering." +
-            "\nQuestion 1-5 Basic level.\nQuetions 6-12 Medium level.\nQuestion 15-20 Extreme level.");
+            "\nQuestion 1-5 Basic level.\nQuetions 6-12 Medium level.\nQuestion 13-20 Extreme level.");
             Console.WriteLine("========================================================\n");
 
             // Basic Level Questions
@@ -140,7 +141,7 @@ namespace TeReoMaoriQuizProject
             {
                 Console.WriteLine("Incorrect Answer!");
             }
-            // Medium Level Questions
+            // Medium Level Questions & Message
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("You Now Are Answering Medium Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -257,7 +258,7 @@ namespace TeReoMaoriQuizProject
             {
                 Console.WriteLine("Incorrect Answer!");
             }
-            // Extreme Level Questions
+            // Extreme Level Questions & Message & Message
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("You Now Are Answering Extreme Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -401,6 +402,7 @@ namespace TeReoMaoriQuizProject
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.ReadLine();
             Console.Clear();
+
 
         }
     }
