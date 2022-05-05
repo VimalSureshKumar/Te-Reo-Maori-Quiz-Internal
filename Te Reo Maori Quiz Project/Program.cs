@@ -1,28 +1,47 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace TeReoMaoriQuizProject
 {
-    class MainClass
+    public class MaoriQuiz
     {
-        public static void Main()
+        static void Main()
         {
             // Psudo Code
-            /* This program is a 20 Question Quiz On Te Reo Maori. 
+            /* This program is a 30 Question Quiz On Te Reo Maori. 
              Use System, Class = MainClass, Public static void Main() = Can Be Called Without Object. 
              Add And Declare Int Variables For Option, Score And (Question = Answer).
              Add An Introduction Message. 
-             5 Questions On Basic Level And Add Basic Level Message. 
+             10 Questions On Basic Level And Add Basic Level Message. 
              Add A While Loop To Each Question So The User Is Only Allowed To Type (1, 2, 3, 4). 
              Have If Statement For Correct Answer And Add 1 To The Score, Else Display Incorrect Answer If The User Dosen't Input The Right Answer To The Question. 
-             7 Questions On Medium Level And Add Medium Level Message.
+             10 Questions On Medium Level And Add Medium Level Message.
              Add A While Loop To Each Question So The User Is Only Allowed To Type (1, 2, 3, 4). 
              Have If Statement For Correct Answer And Add 1 To The Score, Else Display Incorrect Answer If The User Dosen't Input The Right Answer To The Question.
-             8 Questions On Extreme Level And Add Extreme Level Message.
+             10 Questions On Extreme Level And Add Extreme Level Message.
              Add A While Loop To Each Question So The User Is Only Allowed To Type (1, 2, 3, 4). 
              Have If Statement For Correct Answer And Add 1 To The Score, Else Display Incorrect Answer If The User Dosen't Input The Right Answer To The Question.
              Tally Up All The Correct Answers Out Of 20.
              Display End Message
             */
+
+            // Feedback 
+            // Ashin: Add music/sound for incorrect answer.
+            // Thisara: Give second chance for 5 times.
+            // Gilbert: The overall code is to my knowledge unbreakable and entering non answers leaves you with a message saying to reenter a number - between  1 - 4.I think it would be nice to only give the extreme level questions to anyone who has atleast
+            // scored 50 percent this would make it like levels in a game  where if you fail level 1 you would not go onto level two.overall the code is effective but plain and does not have a risk factor or different types of questions that would make the
+            // quiz more engaging instead of the same type of questions over and over, These questions could be tue or false questions or any other type of questions.That is my personal opinion.
+            // Teacher: There is no loop implemented. Give the option to the user to continue with the program. Use any looping concept. 
+            // Implement at least one method. You can create a method to the main menu. You might want to add some more questions and create different levels. Give options to the user to select the levels.Each level can be called by a method.  
+            // Perform the testing and include this in your AS91884 standard write-up. 
+            // Try and add some spacing between questions. 
+            // Try and implement a method to calculate the scores with a return type. 
+
+
+            // Add Array For Each Level To Replace Variables Into Shorter Length
 
             // Declare Variables
             int option;
@@ -51,8 +70,8 @@ namespace TeReoMaoriQuizProject
 
             // Introduction
             Console.WriteLine("========================================================");
-            Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\nThere Will Be 20 Questions That You Will Be Answering." +
-            "\nQuestion 1-5 Basic level.\nQuetions 6-12 Medium level.\nQuestion 13-20 Extreme level.");
+            Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\nThere Will Be 30 Questions That You Will Be Answering." +
+            "\nThree Levels.\n10 Questions For Each Level.\nGood Luck.");
             Console.WriteLine("========================================================\n");
 
             // Basic Level Questions
