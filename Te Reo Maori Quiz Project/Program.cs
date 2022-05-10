@@ -8,8 +8,13 @@ namespace TeReoMaoriQuizProject
 {
     public class MaoriQuiz
     {
-        static void Main()
+        static void Main(string[] args)
         {
+            string[] strArray = new string[] { "Question 1:\nWhat is Ocean in Te Reo Maori:\n1) Ocean\n2) Moana\n3) Awa\n4) River", "Question 2:\nWhat is Mother in Te Reo Maori:\n1) Whaea\n2) Whanau\n3) Tamaraki\n4) Mama", "ccc" };
+            foreach (string str in strArray)
+            Console.WriteLine(str);
+            Console.ReadLine();
+
             // Psudo Code
             /* This program is a 30 Question Quiz On Te Reo Maori. 
              Use System, Class = MainClass, Public static void Main() = Can Be Called Without Object. 
@@ -30,10 +35,10 @@ namespace TeReoMaoriQuizProject
 
             // Feedback 
             // Ashin: Add music/sound for incorrect answer.
-            // Thisara: Give second chance for 5 times.
+            // Thisara: Give second chance for 5 times and show what answers was wrong.
             // Gilbert: The overall code is to my knowledge unbreakable and entering non answers leaves you with a message saying to reenter a number - between  1 - 4.I think it would be nice to only give the extreme level questions to anyone who has atleast
-            // scored 50 percent this would make it like levels in a game  where if you fail level 1 you would not go onto level two.overall the code is effective but plain and does not have a risk factor or different types of questions that would make the
-            // quiz more engaging instead of the same type of questions over and over, These questions could be tue or false questions or any other type of questions.That is my personal opinion.
+            // scored 50 percent this would make it like levels in a game where if you fail level 1 you would not go onto level two. Overall the code is effective but plain and does not have a risk factor or different types of questions that would make the
+            // quiz more engaging instead of the same type of questions over and over, These questions could be tue or false questions or any other type of questions. That is my personal opinion.
             // Teacher: There is no loop implemented. Give the option to the user to continue with the program. Use any looping concept. 
             // Implement at least one method. You can create a method to the main menu. You might want to add some more questions and create different levels. Give options to the user to select the levels.Each level can be called by a method.  
             // Perform the testing and include this in your AS91884 standard write-up. 
@@ -44,6 +49,8 @@ namespace TeReoMaoriQuizProject
             // Add Array For Each Level To Replace Variables Into Shorter Length
 
             // Declare Variables
+            int a;
+            int b;
             int option;
             int score = 0;
             int question1 = 2;
@@ -68,98 +75,8 @@ namespace TeReoMaoriQuizProject
             int question19 = 1;
             int question20 = 3;
 
-            // Introduction
-            Console.WriteLine("========================================================");
-            Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\nThere Will Be 30 Questions That You Will Be Answering." +
-            "\nThree Levels.\n10 Questions For Each Level.\nGood Luck.");
-            Console.WriteLine("========================================================\n");
 
-            // Basic Level Questions
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("You Know Are Answering Basic Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.ReadLine();
-            Console.WriteLine("=========================================================");
-            Console.WriteLine("Question 1:\nWhat is Ocean in Te Reo Maori:\n1) Ocean\n2) Moana\n3) Awa\n4) River" +
-            "\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 2) Moana is correct answer
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5) // While Loop So The User Is Only Allowed to Enter (1, 2, 3, 4)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
-            if (question1 == option) // This Statement Will Display Correct Answer If The User Inputed 2 And Adds 1 Else The User Doesn't Input 2 It Will Display Incorrect Answer 
-            {
-                Console.WriteLine("Correct Answer!");
-                score++;
-            }
-            else
-            {
-                Console.WriteLine("Incorrect Answer!");
-            }
-            Console.WriteLine("=========================================================");
-            Console.WriteLine("Question 2:\nWhat is Mother in Te Reo Maori:\n1) Whaea\n2) Whanau\n3) Tamaraki\n4) Mama" +
-            "\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 1) and 4) is correct answer
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
-            if (question2 == option || question2Ans2 == option) // This Statement Will Display Correct Answer If The User Inputed 1 Or 4 And Adds 1 Else The User Doesn't Input 1 Or 4 It Will Display Incorrect Answer 
-            {
-                Console.WriteLine("Correct Answer!");
-                score++;
-            }
-            else
-            {
-                Console.WriteLine("Incorrect Answer!");
-                Console.ReadLine();
-            }
-            Console.WriteLine("=========================================================");
-            Console.WriteLine("Question 3:\nWhat is Children in Te Reo Maori:\n1) Tamaraki \n2) Children \n3) Tena Koe \n4) Ka Kite" +
-            "\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 1) is correct answer
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5) // While Loop So The User Is Only Allowed to Enter (1, 2, 3, 4)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
-            if (question3 == option) // This Statement Will Display Correct Answer If The User Inputed 1 And Adds 1 Else The User Doesn't Input 1 It Will Display Incorrect Answer 
-            {
-                Console.WriteLine("Correct Answer!");
-                score++;
-            }
-            else
-            {
-                Console.WriteLine("Incorrect Answer!");
-            }
-            Console.WriteLine("=========================================================");
-            Console.WriteLine("Question 4:\nWhat is Good Morning in Te Reo Maori:\n1) Ahiahi Pai \n2) Kia Ora \n3) Morena \n4) Ra Pai" +
-            "\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 3) is correct answer
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5) // While Loop So The User Is Only Allowed to Enter (1, 2, 3, 4)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
-            if (question4 == option) // This Statement Will Display Correct Answer If The User Inputed 3 And Adds 1 Else The User Doesn't Input 3 It Will Display Incorrect Answer 
-            {
-                Console.WriteLine("Correct Answer!");
-                score++;
-            }
-            else
-            {
-                Console.WriteLine("Incorrect Answer!");
-            }
-            Console.WriteLine("=========================================================");
-            Console.WriteLine("Question 5:\nWhat is School in Te Reo Maori:\n1) Whare\n2) Kura\n3) Hapu\n4) Tane" +
-            "\nType either 1, 2, 3, 4 in Keybord, PRESS ENTER TO CONFIRM: "); // 2) is correct answer  
-            while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 5) // While Loop So The User Is Only Allowed to Enter (1, 2, 3, 4)
-            {
-                Console.Write("\nPlease Enter Either 1, 2, 3, 4 In The Keyboard: ");
-            }
-            if (question5 == option) // This Statement Will Display Correct Answer If The User Inputed 2 And Adds 1 Else The User Doesn't Input 2 It Will Display Incorrect Answer 
-            {
-                Console.WriteLine("Correct Answer!");
-                score++;
-            }
-            else
-            {
-                Console.WriteLine("Incorrect Answer!");
-            }
+            
             // Medium Level Questions & Message
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("You Now Are Answering Medium Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
@@ -421,7 +338,6 @@ namespace TeReoMaoriQuizProject
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.ReadLine();
             Console.Clear();
-
 
         }
     }
