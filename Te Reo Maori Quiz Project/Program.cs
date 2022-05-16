@@ -8,9 +8,6 @@ namespace TeReoMaoriQuizProject
 {
     public class MaoriQuiz
     {
-        public string LevelOne { get; set; }
-        public string LevelTwo { get; set; }
-        public string LevelThree { get; set; }
         static void Main(string[] args)
         {
 
@@ -80,7 +77,6 @@ namespace TeReoMaoriQuizProject
             "\nQuestion 1-5 Basic level.\nQuetions 6-12 Medium level.\nQuestion 13-20 Extreme level.\n");
             Console.WriteLine("SELECT WHICH LEVEL YOU WANT TO DO:\nPress 1 For BASIC LEVEL.\nPress 2 FOR MEDIUM LEVEL.\nPress 3 FOR EXTREME LEVEL.");
             Console.WriteLine("========================================================");
-            Console.ReadLine();
 
             // Basic Level Questions
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Te_Reo_Maori_Quiz_Project
 {
-    static public class LevelTwo
+    public class LevelTwo
     {
     }
 }
