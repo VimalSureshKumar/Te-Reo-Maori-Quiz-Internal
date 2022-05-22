@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TeReoMaoriQuizProject
 {
-    public class MaoriQuiz
+    Menu();
+    MediumLevel();
+    ExtremeLevel();
+    class MaoriQuiz
     {
         static void Main(string[] args)
         {
@@ -71,6 +74,7 @@ namespace TeReoMaoriQuizProject
             int question19 = 1;
             int question20 = 3;
 
+            static void Menu() { }
             // Introduction
             Console.WriteLine("========================================================");
             Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz.\nThere Will Be 20 Questions That You Will Be Answering." +
