@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TeReoMaoriQuizProject
+namespace TeReoMaoriQuizProject // name of quiz
 {
-    class MaoriQuiz
+    class MaoriQuiz // class called MaoriQuiz
     {
 #pragma warning disable IDE0060 // Remove unused parameter
-        static void Main(string[] args)
+        static void Main(string[] args) // main
 #pragma warning restore IDE0060 // Remove unused parameter
         {
             /* Psudo Code
             This program is a 30 question quiz on Te Reo Maori.
-            Use System and System and System.Collections.Generic.
+            Use System and System.Collections.Generic.
             Have a Class called MaoriQuiz.
             Use static void Main with string parameters with args.
             Include MainMenu Method with string choose level variable. Display Welcome Message. Display the levels with switch statements. Switch statements redirects to the level chosen by user and clears MainMenu.
@@ -23,30 +23,29 @@ namespace TeReoMaoriQuizProject
             Display how much the user answered correctly and display Congrats Message. If not scored 70% user can try again or exit the program. If passed user can go back to MainMenu to try the quiz again.
             */
 
-
-            MainMenu();
+            MainMenu(); // method MainMenu
             static void MainMenu()
             {
                 string chooseLevel;
                 Console.WriteLine("========================================================");
-                Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz. \nThere Will Be 30 Questions In This Quiz.\n10 Questions Per Level.");
+                Console.WriteLine("Kia Ora And Welcome To My Te Reo Maori Quiz. \nThere Will Be 30 Questions In This Quiz.\n10 Questions Per Level."); // Welcome Message
                 Console.WriteLine("========================================================");
                 Console.WriteLine("\nEnter Any Key To Continue! Or Enter E To Exit!\n");
                 Console.WriteLine("========================================================");
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
-                if (Console.ReadLine().ToLower() == "e")
+                if (Console.ReadLine().ToLower() == "e") // if statement if the user wants to continue or exit.
                 {
                     Console.WriteLine("\nGoodBye");
                     Environment.Exit(0);
                 }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
-                Console.WriteLine("========================================================");
-                Console.WriteLine("ENTER 1 FOR BASIC LEVEL.\n\nENTER 2 FOR MEDIUM LEVEL.\n\nENTER 3 FOR EXTREME LEVEL.");
+                Console.WriteLine("========================================================"); 
+                Console.WriteLine("ENTER 1 FOR BASIC LEVEL.\n\nENTER 2 FOR MEDIUM LEVEL.\n\nENTER 3 FOR EXTREME LEVEL."); // prompts user for a level
                 Console.WriteLine("========================================================");
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 chooseLevel = Console.ReadLine();
 #pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
-                switch (chooseLevel)
+                switch (chooseLevel) // switch statement for the levels then the mainmenu will be cleared
                 {
                     case "1":
                         Console.Clear();
@@ -68,14 +67,15 @@ namespace TeReoMaoriQuizProject
 
             }
 
-            static void BasicLevel()
+            static void BasicLevel() // method BasicLevel which has been chosen by user
             {
+                // declare variables
                 int score = 0;
                 int question = 0;
                 int userInput;
 
                 Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                Console.WriteLine("You Know Are Answering Basic Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
+                Console.WriteLine("You Know Are Answering Basic Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: "); 
                 Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 Console.ReadLine();
                 Console.WriteLine("========================================================\n");
@@ -151,8 +151,9 @@ namespace TeReoMaoriQuizProject
 
             }
 
-            static void MediumLevel()
+            static void MediumLevel() // method Medium level which has either been chosen by the user or the user passed the previous level
             {
+                // declare variables
                 int score = 0;
                 int question = 0;
                 int userInput;
@@ -233,7 +234,7 @@ namespace TeReoMaoriQuizProject
                 }
             }
 
-            static void ExtremeLevel()
+            static void ExtremeLevel() // method ExtremeLevel which has either been chosen by the user or the user passed the previous 2 levels
             {
                 int score = 0;
                 int question = 0;
@@ -310,10 +311,9 @@ namespace TeReoMaoriQuizProject
                     else
                     {
                         Console.WriteLine("GoodBye!");
-                        Environment.Exit(0);
+                        Environment.Exit(0); 
                     }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
-
                 }
             }
         }
@@ -321,15 +321,7 @@ namespace TeReoMaoriQuizProject
 }
 
 // Feedback 
-// Ashin: Add music/sound for incorrect answer.
-// Thisara: Give second chance for 5 times and show what answers was wrong.
-// Gilbert: The overall code is to my knowledge unbreakable and entering non answers leaves you with a message saying to reenter a number - between  1 - 4.I think it would be nice to only give the extreme level questions to anyone who has atleast
-// scored 50 percent this would make it like levels in a game where if you fail level 1 you would not go onto level two. Overall the code is effective but plain and does not have a risk factor or different types of questions that would make the
-// quiz more engaging instead of the same type of questions over and over, These questions could be tue or false questions or any other type of questions. That is my personal opinion.
-// Teacher: There is no loop implemented. Give the option to the user to continue with the program. Use any looping concept. 
 // Implement at least one method. You can create a method to the main menu. You might want to add some more questions and create different levels. Give options to the user to select the levels.Each level can be called by a method.  
-// Perform the testing and include this in your AS91884 standard write-up. 
-// Try and add some spacing between questions. 
 // Try and implement a method to calculate the scores with a return type. 
 
 
