@@ -140,7 +140,7 @@ namespace TeReoMaoriQuizProject // name of quiz
                     if (Console.ReadLine().ToLower() == "y")
                     {
                         Console.Clear();
-                        ExtremeLevel();
+                        BasicLevel();
                     }
                     else
                     {
@@ -223,7 +223,7 @@ namespace TeReoMaoriQuizProject // name of quiz
                     if (Console.ReadLine().ToLower() == "y")
                     {
                         Console.Clear();
-                        ExtremeLevel();
+                        MediumLevel();
                     }
                     else
                     {
@@ -298,7 +298,7 @@ namespace TeReoMaoriQuizProject // name of quiz
                 }
                 else
                 {
-                    Console.WriteLine("\nUnfortunately, You Have Not Passed This Level!\nBetter Luck Next Time!");
+                    Console.WriteLine("\nUnfortunately, You Have Not Passed This Level!\nBetter Luck Next Time!\n");
                     Console.WriteLine("==========================================================\n");
                     Console.WriteLine("\nPress Y To Try Again:\n\nEnter Any Other Key To EXIT:\n");
                     Console.WriteLine("==========================================================");
