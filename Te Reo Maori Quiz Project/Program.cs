@@ -23,6 +23,15 @@ namespace TeReoMaoriQuizProject // name of quiz
             Display how much the user answered correctly and display Congrats Message. If not scored 70% user can try again or exit the program. If passed user can go back to MainMenu to try the quiz again.
             */
 
+
+            // WARNING MESSAGE **********
+            // Resubmission For AS91883 Develop a computer program.
+            // I have not finished making authentic Te Maori Questions due to copyright. So the question will be the same for each level.
+            // THIS IS NOT THE FINAL PRODUCT. FINAL PRODUCT WILL BE INCLUDED IN AS91884 Iterative Processes ALONG WITH AUTHENTIC QUESTIONS.
+            // However I have added and implemented most of the feedback given from users and have ticked all the boxes for Achived and some for Merit. 
+            // **********
+
+
             MainMenu(); // method MainMenu
             static void MainMenu()
             {
