@@ -10,30 +10,21 @@ namespace TeReoMaoriQuizProject // name of quiz
 #pragma warning restore IDE0060 // Remove unused parameter
         {
             /* Psudo Code
-            This program is a 30 question quiz on Te Reo Maori.
+            This program is a 30 question vocab quiz on Te Reo Maori.
             Use System and System.Collections.Generic.
             Have a Class called MaoriQuiz.
             Use static void Main with string parameters with args.
             Include MainMenu Method with string choose level variable. Display Welcome Message. Display the levels with switch statements. Switch statements redirects to the level chosen by user and clears MainMenu.
             If user has chosen Basic Level. Display basicLevelQuestions array and options array and read the users answers and display if it's correct or incorrct by using the answers array. Play a sound if it's incorrect. Go to next question if correct. While the user is only allowed to type 1, 2, 3, 4.
-            Display how much the user answered correctly and is only allowed to move to MediumLevel if only scored 80%. If not passed user can try again or Exit.
-            If the user has passed or has chosen Level 2. Display mediumLevelQuestions array and options array and read the users answers and display if it's correct or incorrct by using answers array. Play a sound if it's incorrect. Go to next question if correct. While the user is only allowed to type 1, 2, 3, 4.
-            Display how much the user answered correctly and is only allowed to move to ExtremeLevel if only scored 70%. If not passed user can try again or Exit.
-            If the user has passed or has chosen Level 3. Display extremeLevelQuestions and options and read the users answers and display if it's correct or incorrct. Play a sound if it's incorrect. Go to next question if correct. While the user is only allowed to type 1, 2, 3, 4.
-            Display how much the user answered correctly and display Congrats Message. If not scored 70% user can try again or exit the program. If passed user can go back to MainMenu to try the quiz again.
+            Display how much the user answered correctly and is only allowed to move to MediumLevel if only scored 70%. If not passed user can try again or Exit.
+            If the user has passed Basic Level or has chosen Medium Levl. Display mediumLevelQuestions array and options array and read the users answers and display if it's correct or incorrct by using answers array. Play a sound if it's incorrect. Go to next question if correct. While the user is only allowed to type 1, 2, 3, 4.
+            Display how much the user answered correctly and is only allowed to move to Extreme Level if only scored 70%. If not passed user can try again or Exit.
+            If the user has passed Medium Levl or has chosen Extreme Level. Display extremeLevelQuestions and options and read the users answers and display if it's correct or incorrct. Play a sound if it's incorrect. Go to next question if correct. While the user is only allowed to type 1, 2, 3, 4.
+            Display how much the user answered correctly and display congrats on completing my quiz. If not scored 70% user can try again or exit the program. If passed user can go back to MainMenu to try the quiz again.
             */
 
-
-            // WARNING MESSAGE **********
-            // Resubmission For AS91883 Develop a computer program.
-            // I have not finished making authentic Te Maori Questions due to copyright. So the question will be the same for each level.
-            // THIS IS NOT THE FINAL PRODUCT. FINAL PRODUCT WILL BE INCLUDED IN AS91884 Iterative Processes ALONG WITH AUTHENTIC QUESTIONS.
-            // However I have added and implemented most of the feedback given from users and have ticked all the boxes for Achived and some for Merit. 
-            // **********
-
-
-            MainMenu(); // method MainMenu
-            static void MainMenu()
+            MainMenu(); // calls method MainMenu
+            static void MainMenu() // MainMenu Method
             {
                 string chooseLevel;
                 Console.WriteLine("========================================================");
@@ -44,7 +35,7 @@ namespace TeReoMaoriQuizProject // name of quiz
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                 if (Console.ReadLine().ToLower() == "e") // if statement if the user wants to continue or exit.
                 {
-                    Console.WriteLine("\nGoodBye");
+                    Console.WriteLine("\nGoodBye!");
                     Environment.Exit(0);
                 }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
@@ -73,26 +64,25 @@ namespace TeReoMaoriQuizProject // name of quiz
                         MainMenu();
                         break;
                 }
-
             }
 
-            static void BasicLevel() // method BasicLevel which has been chosen by user
+            static void BasicLevel() // method BasicLevel 
             {
                 // declare variables
                 int score = 0;
                 int question = 0;
                 int userInput;
 
-                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                Console.WriteLine("You Know Are Answering Basic Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: "); 
-                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("You Are Answering Basic Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: "); 
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 Console.ReadLine();
                 Console.WriteLine("========================================================\n");
                 do
                 {
-                    string[] basicLevelQuestions = new string[7] { "Question 1:\nWhat is Guardian in Te Reo Maori:", "Question 2:\nWhat is Prayer in Te Reo Maori:", "Question 3:\nWhat is Sovereighty in Te Reo Maori:", "Question 4:\nWhat is Crying in Te Reo Maori:", "Question 5:\nWhat is Ancestry in Te Reo Maori:", "Question 6:\nWhat is Embarrassed in Te Reo Maori:", "Question 7:\nWhat is Treasure in Te Reo Maori:" };
-                    string[] options = new string[7] { "\n1) Tane\n2) Kaitiaki\n3) Taniwha\n4) Ruru", "\n1) Karakia\n2) Rongoa\n3) Raupo\n4) Raupatu", "\n1) Rangatahi\n2) Rangatira\n3) Rahui\n4) Rangatiratanga", "\n1) Porohe\n2) Tangihanga\n3) Piharau\n4) Patiki", "\n1) Panui\n2) Pa Tuna\n3) Whakapapa\n4) Ngawha", "\n1) Whakama\n2) Wairua\n3) Korowai\n4) Korimako", "\n1) Korero\n2) Kokopu\n3) Tangi\n4) Taonga" };
-                    int[] basicLevelAnswers = new int[7] { 2, 1, 4, 2, 3, 1, 4 };
+                    string[] basicLevelQuestions = new string[10] { "Question 1:\nWhat's Hello in Te Reo Maori:", "Question 2:\nWhat's Goodbye in Te Reo Maori:", "Question 3:\nWhat's School in Te Reo Maori:", "Question 4:\nWhat's Grandparents in Te Reo Maori:", "Question 5:\nWhat's Father in Te Reo Maori:", "Question 6:\nWhat's Sister in Te Reo Maori:", "Question 7:\nWhat's Family in Te Reo Maori:", "Question 8:\nWhat's Dog in Te Reo Maori:", "Question 9:\nWhat's House in Te Reo Maori:", "Question 10:\nWhat's Fish In Te Reo Maori:" };
+                    string[] options = new string[10] { "\n1) Aroha\n2) Kia Ora\n3) Taniwha\n4) Whero", "\n1) Ka Kite\n2) Tena Koe\n3) Nga Mihi\n4) Raupatu", "\n1) Kuri\n2) Rori\n3) Rahui\n4) Kura", "\n1) Teina\n2) Tipuna\n3) Tuahine\n4) Tungane", "\n1) Tama\n2) Wahine\n3) Matua\n4) Koroua", "\n1) Teina\n2) Tuakana\n3) Kuia\n4) Matamua", "\n1) Tamariki\n2) Tane\n3) Whaea\n4) Whanau", "\n1) Manu\n2) Kuri\n3) Rapeti\n4) Ngeru", "\n1) Pakitara\n2) Kuaha\n3) Whare\n4) Moenga", "\n1) Ika\n2) Kiore Nui\n3) Kiore Iti\n4) Ika Koura" };
+                    int[] basicLevelAnswers = new int[10] { 2, 1, 4, 2, 3, 1, 4 , 2, 3, 1 };
 
                     Console.WriteLine($"{basicLevelQuestions[question]} {options[question]}\n");
                     while (!int.TryParse(Console.ReadLine(), out userInput) || userInput <= 0 || userInput >= 5) // While Loop So The User Is Only Allowed to Enter (1, 2, 3, 4)
@@ -111,18 +101,18 @@ namespace TeReoMaoriQuizProject // name of quiz
                         Console.Beep(350, 600);
                         question++;
                     }
-                    Console.WriteLine("==========================================================\n");
+                    Console.WriteLine("========================================================\n");
                 }
-                while (question < 5);
+                while (question < 10);
                 {
-                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                     Console.WriteLine($"\nYour Total Score Was {score}/10\n");
-                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 }
-                if (score == 5)
+                if (score >= 7)
                 {
                     Console.WriteLine("\nCongratulations On Passing This Level!\n");
-                    Console.WriteLine("==========================================================\n" +
+                    Console.WriteLine("========================================================\n" +
                     "\nEnter Y To Continue On To Next Level:\n\nEnter Any Other Key To EXIT:\n");
                     Console.WriteLine("========================================================");
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
@@ -142,9 +132,9 @@ namespace TeReoMaoriQuizProject // name of quiz
                 else
                 {
                     Console.WriteLine("\nUnfortunately, You Have Not Passed This Level!\nBetter Luck Next Time!\n");
-                    Console.WriteLine("==========================================================");
+                    Console.WriteLine("========================================================");
                     Console.WriteLine("\nPress Y To Try Again:\n\nEnter Any Other Key To EXIT:\n");
-                    Console.WriteLine("==========================================================");
+                    Console.WriteLine("========================================================");
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                     if (Console.ReadLine().ToLower() == "y")
                     {
@@ -157,7 +147,6 @@ namespace TeReoMaoriQuizProject // name of quiz
                     }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
                 }
-
             }
 
             static void MediumLevel() // method Medium level which has either been chosen by the user or the user passed the previous level
@@ -167,16 +156,16 @@ namespace TeReoMaoriQuizProject // name of quiz
                 int question = 0;
                 int userInput;
 
-                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                Console.WriteLine("You Now Are Answering Medium Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
-                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("You Are Answering Medium Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 Console.ReadLine();
                 Console.WriteLine("========================================================\n");
                 do
                 {
-                    string[] mediumLevelQuestions = new string[7] { "Question 1:\nWhat is Guardian in Te Reo Maori:", "Question 2:\nWhat is Prayer in Te Reo Maori:", "Question 3:\nWhat is Sovereighty in Te Reo Maori:", "Question 4:\nWhat is Crying in Te Reo Maori:", "Question 5:\nWhat is Ancestry in Te Reo Maori:", "Question 6:\nWhat is Embarrassed in Te Reo Maori:", "Question 7:\nWhat is Treasure in Te Reo Maori:" };
-                    string[] options = new string[7] { "\n1) Tane\n2) Kaitiaki\n3) Taniwha\n4) Ruru", "\n1) Karakia\n2) Rongoa\n3) Raupo\n4) Raupatu", "\n1) Rangatahi\n2) Rangatira\n3) Rahui\n4) Rangatiratanga", "\n1) Porohe\n2) Tangihanga\n3) Piharau\n4) Patiki", "\n1) Panui\n2) Pa Tuna\n3) Whakapapa\n4) Ngawha", "\n1) Whakama\n2) Wairua\n3) Korowai\n4) Korimako", "\n1) Korero\n2) Kokopu\n3) Tangi\n4) Taonga" };
-                    int[] mediumLevelAnswers = new int[7] { 2, 1, 4, 2, 3, 1, 4 };
+                    string[] mediumLevelQuestions = new string[10] { "Question 1:\nWhat's Beautiful in Te Reo Maori:", "Question 2:\nWhat's Milk in Te Reo Maori:", "Question 3:\nWhat's Mathematics in Te Reo Maori:", "Question 4:\nWhat's Play Ground in Te Reo Maori:", "Question 5:\nWhat's High School in Te Reo Maori:", "Question 6:\nWhat's Television in Te Reo Maori:", "Question 7:\nWhat's Vegetables in Te Reo Maori:", "Question 8:\nWhat's Utensils in Te Reo Maori:", "Question 9:\nWhat's Fruit in Te Reo Maori:", "Question 10:\nWhat's Drink in Te Reo Maori:" };
+                    string[] options = new string[10] { "\n1) Poraka \n2) Kaitiaki\n3) Taniwha\n4) Ruru", "\n1) Hinu\n2) Raupatu\n3) Raupo\n4) Miraka", "\n1) Papama\n2) Pangarau\n3) Ropu Ako\n4) Kaupapa ", "\n1) Kaiako\n2) Papa Takakaro\n3) Pukapuka\n4) Ruri", "\n1) Kura Tuarua\n2) Kura Naenganui\n3) Kura Tuatahi\n4) Karaka", "\n1) Kakahu\n2) Wharekai\n3) Wharepukapuka\n4) Ponaka Whakaata", "\n1) Hamipeka\n2) Kumara\n3) Huawhenua\n4) Kapeti", "\n1) Taputapu\n2) Arani\n3) Hehei\n4) Kotakota Riwai", "\n1) Panana\n2) Huarakau\n3) Heki\n4) Paukena", "\n1) Pereti\n2) Pihikete\n3) Paraoa\n4) Inu" };
+                    int[] mediumLevelAnswers = new int[10] { 3, 4, 2, 2, 1, 4, 3, 1, 2, 4 };
 
                     Console.WriteLine($"{mediumLevelQuestions[question]} {options[question]}\n");
                     while (!int.TryParse(Console.ReadLine(), out userInput) || userInput <= 0 || userInput >= 5) // While Loop So The User Is Only Allowed to Enter (1, 2, 3, 4)
@@ -195,18 +184,18 @@ namespace TeReoMaoriQuizProject // name of quiz
                         Console.Beep(350, 600);
                         question++;
                     }
-                    Console.WriteLine("==========================================================\n");
+                    Console.WriteLine("========================================================\n");
                 }
-                while (question < 5);
+                while (question < 10);
                 {
-                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                     Console.WriteLine($"\nYour Total Score Was {score}/10\n");
-                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 }
-                if (score == 5)
+                if (score >= 7)
                 {
                     Console.WriteLine("\nCongratulations On Passing This Level!\n");
-                    Console.WriteLine("==========================================================\n" +
+                    Console.WriteLine("========================================================\n" +
                     "\nEnter Y To Continue On To Final Level:\n\nEnter Any Other Key To EXIT:\n");
                     Console.WriteLine("========================================================");
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
@@ -225,9 +214,9 @@ namespace TeReoMaoriQuizProject // name of quiz
                 else
                 {
                     Console.WriteLine("\nUnfortunately, You Have Not Passed This Level!\nBetter Luck Next Time!\n");
-                    Console.WriteLine("==========================================================");
+                    Console.WriteLine("========================================================");
                     Console.WriteLine("\nPress Y To Try Again:\n\nEnter Any Other Key To EXIT:\n");
-                    Console.WriteLine("==========================================================");
+                    Console.WriteLine("========================================================");
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                     if (Console.ReadLine().ToLower() == "y")
                     {
@@ -249,16 +238,16 @@ namespace TeReoMaoriQuizProject // name of quiz
                 int question = 0;
                 int userInput;
 
-                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                Console.WriteLine("You Now Are Answering Extreme Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
-                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("You Are Answering Extreme Level Questions, Good Luck.\nPRESS ENTER TO CONTINUE: ");
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 Console.ReadLine();
                 Console.WriteLine("========================================================");
                 do
                 {
-                    string[] extremeLevelQuestions = new string[7] { "Question 1:\nWhat is Guardian in Te Reo Maori:", "Question 2:\nWhat is Prayer in Te Reo Maori:", "Question 3:\nWhat is Sovereighty in Te Reo Maori:", "Question 4:\nWhat is Crying in Te Reo Maori:", "Question 5:\nWhat is Ancestry in Te Reo Maori:", "Question 6:\nWhat is Embarrassed in Te Reo Maori:", "Question 7:\nWhat is Treasure in Te Reo Maori:" };
-                    string[] options = new string[7] { "\n1) Tane\n2) Kaitiaki\n3) Taniwha\n4) Ruru", "\n1) Karakia\n2) Rongoa\n3) Raupo\n4) Raupatu", "\n1) Rangatahi\n2) Rangatira\n3) Rahui\n4) Rangatiratanga", "\n1) Porohe\n2) Tangihanga\n3) Piharau\n4) Patiki", "\n1) Panui\n2) Pa Tuna\n3) Whakapapa\n4) Ngawha", "\n1) Whakama\n2) Wairua\n3) Korowai\n4) Korimako", "\n1) Korero\n2) Kokopu\n3) Tangi\n4) Taonga" };
-                    int[] extremeLevelAnswers = new int[7] { 2, 1, 4, 2, 3, 1, 4 };
+                    string[] extremeLevelQuestions = new string[10] { "Question 1:\nWhat's Seafood in Te Reo Maori:", "Question 2:\nWhat's Church in Te Reo Maori:", "Question 3:\nWhat's Entertainment in Te Reo Maori:", "Question 4:\nWhat's Sports in Te Reo Maori:", "Question 5:\nWhat's Joyful in Te Reo Maori:", "Question 6:\nWhat's Summer in Te Reo Maori:", "Question 7:\nWhat's Laughing in Te Reo Maori:", "Question 8:\nWhat's Watching in Te Reo Maori:", "Question 9:\nWhat's Quater in Te Reo Maori:", "Question 10:\nWhat's Quiz in Te Reo Maori:" };
+                    string[] options = new string[10] { "\n1) Kai Moana\n2) Whakata\n3) Painaina\n4) Hakari ", "\n1) Hararei\n2) Kauhoe\n3) Whare Karakia\n4) Tamanuitera", "\n1) Painaina\n2) Whakata\n3) Manuhiri\n4) Whakangahau", "\n1) Perehame\n2) Karekare\n3) Marino\n4) Hokinakina", "\n1) Tauera\n2) Whiti\n3) Harikoakoa \n4) Tahamoana", "\n1) Ramati \n2) Makariri\n3) Tatoto\n4) Takaro", "\n1) Tuhitahi\n2) Katakata\n3) Matakitaki\n4) Maranga", "\n1) Pikiniki\n2) Ahua\n3) Mahana\n4) Matakitaki", "\n1) Huawha\n2) Tatua\n3) Tarau Rao\n4) Panekoti", "\n1) Tauira\n2) Pataitai\n3) Putaiao\n4) Tikana-A-Iwi" };
+                    int[] extremeLevelAnswers = new int[10] { 1, 3, 4, 4, 3, 1, 2, 4, 1, 2 };
 
                     Console.WriteLine($"{extremeLevelQuestions[question]} {options[question]}\n");
                     while (!int.TryParse(Console.ReadLine(), out userInput) || userInput <= 0 || userInput >= 5) // While Loop So The User Is Only Allowed to Enter (1, 2, 3, 4)
@@ -277,20 +266,20 @@ namespace TeReoMaoriQuizProject // name of quiz
                         Console.Beep(350, 600);
                         question++;
                     }
-                    Console.WriteLine("==========================================================\n");
+                    Console.WriteLine("========================================================\n");
                 }
-                while (question < 5);
+                while (question < 10);
                 {
-                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                     Console.WriteLine($"\nYour Total Score Was {score}/10\n");
-                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 }
-                if (score == 5)
+                if (score >= 7)
                 {
                     Console.WriteLine("\nCongratulations For Completing My Quiz!\nWould You Like To Play Again!\n");
-                    Console.WriteLine("==========================================================" +
+                    Console.WriteLine("========================================================" +
                     "\nEnter Y To Go Back To Main Menu:\n\nEnter Any Other Key To EXIT!\n");
-                    Console.WriteLine("==========================================================\n");
+                    Console.WriteLine("========================================================\n");
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                     if (Console.ReadLine().ToLower() == "y")
                     {
@@ -308,9 +297,9 @@ namespace TeReoMaoriQuizProject // name of quiz
                 else
                 {
                     Console.WriteLine("\nUnfortunately, You Have Not Passed This Level!\nBetter Luck Next Time!\n");
-                    Console.WriteLine("==========================================================\n");
+                    Console.WriteLine("========================================================\n");
                     Console.WriteLine("\nPress Y To Try Again:\n\nEnter Any Other Key To EXIT:\n");
-                    Console.WriteLine("==========================================================");
+                    Console.WriteLine("========================================================");
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                     if (Console.ReadLine().ToLower() == "y")
                     {
